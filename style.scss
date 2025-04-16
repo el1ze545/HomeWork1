@@ -110,6 +110,10 @@ body {
     text-align: left;
 }
 
+.about__content-title_mobile {
+    display: none;
+}
+
 .about__content-text {
     padding-top: 24px;
     color: rgb(255, 255, 255);
@@ -184,3 +188,13 @@ body {
     margin-left: 32px;
     margin-top: 16px;
 }
+
+.about__cards-text_mobile {
+    display: none;
+}
+
+.about__cards-btn_mobile {
+    display: none;
+}
+
+@import 'mobile';
