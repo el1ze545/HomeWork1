@@ -90,12 +90,12 @@ body {
 }
 
 .about {
-  height: 1470px;
   background: rgb(32, 32, 39);
   padding-top: 94px;
   background-image: url(images_hw1/about_bg-star.svg);
   background-repeat: no-repeat;
   background-position: 0px 42px;
+  padding-bottom: 96px;
 }
 
 .about__content-title {
@@ -186,12 +186,131 @@ body {
   margin-top: 16px;
 }
 
-.about__cards-text_mobile {
+.about__cards-text-mobile {
   display: none;
 }
 
-.about__cards-btn_mobile {
+.about__cards-btn-mobile {
   display: none;
+}
+
+.games {
+  background: rgb(32, 32, 39);
+  padding-bottom: 144px;
+  background-image: url(images_hw1/mini-games-bg.svg);
+  background-repeat: no-repeat;
+  background-position-x: 1300px;
+  background-position-y: 50px;
+}
+
+.games__container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.games__title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  padding-bottom: 72px;
+}
+
+.games__content {
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+  border-radius: 50px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+}
+
+.games__content-left {
+  padding-left: 48px;
+  padding-top: 48px;
+}
+
+.games__content_reverse {
+  flex-direction: row-reverse;
+}
+
+.games__content-title {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+}
+
+.games__content-text {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  padding-top: 24px;
+}
+
+.games__content-btn {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 48px;
+  height: 66px;
+  width: 247px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.games__content-btn_hover:hover {
+  background: white;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 60px;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  transition: 0.5s;
+}
+
+.games__content-image {
+  height: 500px;
+}
+
+.footer {
+  height: 150px;
+  background: rgb(189, 237, 53);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__title {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
 }
 
 @media (max-width: 767px) {
@@ -245,75 +364,71 @@ body {
     letter-spacing: 0%;
     margin-top: 36px;
   }
-  .top__btn_hover:hover {
-    display: none;
-  }
   .about {
-    height: 3740px;
-  }
-  .about__content-title {
     display: none;
   }
-  .about__content-title_mobile {
-    display: block;
+  .games {
+    padding-bottom: 55px;
+  }
+  .games__title {
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
     letter-spacing: 0px;
+    padding-top: 48px;
   }
-  .about__content-text {
-    display: none;
-  }
-  .about__cards {
-    display: flex;
-    flex-direction: column;
+  .games__container {
     gap: 24px;
-    align-items: center;
   }
-  .about__cards-item {
-    width: 343px;
-    height: 528px;
-    overflow: hidden;
+  .games__content-mobile1 {
+    height: 527px;
+  }
+  .games__content-mobile2 {
+    height: 566px;
+  }
+  .games__content-mobile3 {
+    height: 566px;
+  }
+  .games__content-mobile4 {
+    height: 527px;
+  }
+  .games__content-mobile5 {
+    height: 605px;
+  }
+  .games__content-mobile6 {
+    height: 625px;
+  }
+  .games__content {
     display: flex;
-    flex-direction: column;
+    border-radius: 50px;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    flex-direction: column-reverse;
   }
-  .about__cards-item_big {
-    height: 568px;
+  .games__content-left {
+    padding-top: 29px;
+    padding-left: 29px;
   }
-  .about__cards-item_biggest {
-    height: 606px;
-  }
-  .about__cards-number {
-    display: none;
-  }
-  .about__cards-title {
+  .games__content-title {
     color: rgb(32, 32, 39);
     font-family: Montserrat;
     font-size: 32px;
     font-weight: 700;
     line-height: 39px;
     letter-spacing: 0px;
-    max-width: 285px;
   }
-  .about__cards-text-mobile {
-    display: block;
+  .games__content-text {
     color: rgb(0, 0, 0);
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0px;
-    text-align: left;
-    max-width: 285px;
-    margin-top: 16px;
-    margin-left: 29px;
+    padding-top: 16px;
   }
-  .about__cards-btn-mobile {
-    display: block;
-    width: 285px;
-    height: 55px;
+  .games__content-btn {
     box-sizing: border-box;
     border: 1px solid rgb(32, 32, 39);
     border-radius: 60px;
@@ -324,15 +439,13 @@ body {
     font-weight: 600;
     line-height: 141.69%;
     letter-spacing: 0%;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 285px;
+    height: 55px;
     margin-top: 32px;
-    margin-left: 29px;
+    margin-bottom: 32px;
   }
-  .about__cards-item_hover:hover {
-    display: none;
+  .games__content-image {
+    height: 285px;
   }
   .footer {
     height: 100px;
