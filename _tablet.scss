@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-@media (max-width: 1024px) {
-    .center {
-        padding-left: calc(50% - 786px/2);
-        padding-right: calc(50% - 786px/2);
-    }
-
-=======
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1200px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -17,7 +9,7 @@
     }
 
     .top__btn {
-        margin-left: 245px;
+        margin: 36px auto 0px;
     }
 
     .about {
@@ -37,45 +29,25 @@
         align-items: center;
     }
 
-    .games__content-mobile1 {
-        height: 700px;
-    }
-
-    .games__content-mobile2 {
-        height: 700px;
-    }
-
-    .games__content-mobile3 {
-        height: 700px;
-    }
-
-    .games__content-mobile4 {
-        height: 700px;
-    }
-
-    .games__content-mobile5 {
-        height: 800px;
-    }
-
-    .games__content-mobile6 {
-        height: 800px;
-    }
-    
     .games__content {
         display: flex;
         flex-direction: column-reverse;
-        width: 481px;
+        width: 100%;
+        height: auto;
         overflow: hidden;
+        max-width: 600px;
+    }
+
+    .games__content-left {
+        padding: 29px 29px 32px 29px;
     }
 
     .games__content-image {
-        height: 400px;
+        height: auto;
+        width: 100%;
     }
 
     .games__content-btn {
-        margin-left: 18px;
-        margin-bottom: 30px;
-        width: 350px;
+        margin: 32px auto 0px;
     }
->>>>>>> fd2f22a4d54ddb5770505d6c3336b697bc1a418b
 }
