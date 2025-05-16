@@ -50,6 +50,8 @@ function simpleArithmetic() {
         } else {
             alert(`Неправильно, правильный ответ: ${correctAnswer}`);
         }  
+
+
     }
 }
 
