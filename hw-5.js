@@ -1,4 +1,3 @@
-///Игра__Простая__Арифметика__///
 function simpleArithmetic() {
     function generateRandomExpressionsArray() {
         const operations = ["+", "-", "*", "/"];
