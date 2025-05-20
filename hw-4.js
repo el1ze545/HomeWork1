@@ -1,5 +1,5 @@
 function guessNumber () {
-    const num = 52;
+    const num = Math.floor(Math.random() * 100);
 
     while (true) {
         let userInput = prompt('Попробуй угадать загаданное число от 0 до 100');
