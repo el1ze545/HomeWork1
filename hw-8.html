@@ -1,0 +1,184 @@
+<!--Задание_1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+    <button class="btn">Скрыть</button>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+</body>
+</html>
+
+<script>
+    const titleEl = document.querySelector('.title');
+    const buttonEl = document.querySelector('.btn');
+
+    buttonEl.addEventListener('click', function() {
+        titleEl.classList.toggle('hidden');
+    })
+</script>
+
+<!--Задание_2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="paragraph">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, fuga?
+    </p>
+
+    <button class="color-btn">Изменить цвет</button>
+
+</body>
+</html>
+
+<script>
+    const paragraphEl = document.querySelector('.paragraph');
+    const colorButtonEl = document.querySelector('.color-btn');
+
+    colorButtonEl.addEventListener('click', function() {
+        paragraphEl.style.color = 'blue';
+    })
+</script>
+
+<!-- Задание_3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-title">Lorem ipsum dolor sit.</h1>
+
+    <button class="text-btn">Изменить текст</button>
+
+</body>
+</html>
+
+<script>
+    const changeTitleEl = document.querySelector('.text-title');
+    const textButtonEl = document.querySelector('.text-btn');
+
+    textButtonEl.addEventListener('click', function() {
+        changeTitleEl.textContent = 'Привет, мир!';
+    })
+</script>
+
+<!-- Задание_4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="description">Lorem ipsum dolor sit amet.</h1>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, sunt?</p>
+    <p class="description">Lorem, ipsum dolor.</p>
+</body>
+</html>
+
+<script>
+    const descriptions = document.querySelectorAll('.description');
+    descriptions.forEach(el => {
+        el.textContent = 'Измененный текст';
+    })
+</script> 
+
+<!-- Задание_5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="descriptions">Lorem ipsum dolor sit amet.</h1>
+    <p class="about">Lorem, ipsum dolor.</p>
+    <p class="descriptions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, sunt?</p>
+    <p class="about">Lorem, ipsum dolor.</p>
+    <p class="descriptions">Lorem, ipsum dolor.</p>
+</body>
+</html>
+
+<script>
+    const secondDescriptions = document.querySelectorAll('.descriptions');
+    secondDescriptions.forEach(el => {
+        el.textContent = 'Новый текст';
+    })
+</script> 
+
+<!-- Задание_6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="add__paragraph-btn">Добавить элемент</button>
+</body>
+</html>
+
+<script>
+    const addNewElement = document.querySelector('.add__paragraph-btn');
+
+    addNewElement.addEventListener('click', function() {
+        const newElement = document.createElement('newParagraph');
+        newElement.textContent = ' Новый абзац';
+        document.body.appendChild(newElement);
+    });
+</script> 
+
+<!-- Задание_7 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="for">Lorem, ipsum dolor.</p>
+    <p class="descriptions__paragraph descriptions__paragraph-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, sunt?</p>
+    <p class="for">Lorem, ipsum dolor.</p>
+    <p class="descriptions__paragraph">Lorem, ipsum dolor.</p>
+
+    <button class="remove-btn">Удалить элемент</button>
+
+    <style>
+        .descriptions__paragraph-first {
+            color: red;
+        }
+    </style>
+</body>
+</html>
+
+<script>
+    const descriptionParagraph = document.querySelector('.descriptions__paragraph');
+    const removeElement = document.querySelector('.remove-btn');
+
+    removeElement.addEventListener('click', function () {
+        descriptionParagraph.remove();
+    })
+    
+</script> 
