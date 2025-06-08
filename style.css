@@ -4,7 +4,7 @@
 }
 
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -93,13 +93,61 @@ body {
   transition: 0.5s;
 }
 
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.scroll {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
+  background-size: cover;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  display: flex;
+  animation: scroll-left linear 10s infinite;
+  animation-direction: normal;
+}
+
+.scroll-text {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.scroll-text::after {
+  content: "";
+  display: inline-block;
+  background-image: url(images_hw1/star-separator.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 36px;
+  height: 36px;
+  margin-left: 51px;
+  margin-right: 51px;
+}
+
 .about {
   background: rgb(32, 32, 39);
   padding-top: 94px;
   background-image: url(images_hw1/about_bg-star.svg);
   background-repeat: no-repeat;
   background-position: 0px 42px;
-  padding-bottom: 96px;
+  padding-bottom: 50px;
 }
 
 .about__content-title {
@@ -221,6 +269,7 @@ body {
   line-height: 78px;
   letter-spacing: 0px;
   padding-bottom: 72px;
+  padding-top: 50px;
 }
 
 .games__content {
@@ -367,6 +416,19 @@ body {
     line-height: 141.69%;
     letter-spacing: 0%;
     margin: 36px auto 0px;
+  }
+  .scroll {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .scroll-text {
+    font-size: 16px;
+  }
+  .scroll-text::after {
+    width: 19px;
+    height: 19px;
+    margin-left: 27px;
+    margin-right: 27px;
   }
   .about {
     display: none;
