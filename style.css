@@ -9,6 +9,8 @@ html {
 
 body {
   font-family: Montserrat;
+  background: rgb(188, 236, 48);
+  overflow-x: hidden;
 }
 
 .center {
