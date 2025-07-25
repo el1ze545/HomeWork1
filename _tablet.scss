@@ -1,0 +1,55 @@
+@media (min-width: 767px) and (max-width: 1200px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top__content {
+        text-align: center;
+    }
+
+    .top__btn {
+        margin: 36px auto 0px;
+    }
+
+    .about {
+        display: none;
+    }   
+
+    .games {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+
+    .games__title {
+        text-align: center;
+    }
+
+    .games__container {
+        align-items: center;
+    }
+
+    .games__content {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        max-width: 600px;
+    }
+
+    .games__content-left {
+        padding: 29px 29px 32px 29px;
+    }
+
+    .games__content-image {
+        height: auto;
+        width: 100%;
+    }
+
+    .games__content-btn {
+        margin: 32px auto 0px;
+    }
+
+    
+}

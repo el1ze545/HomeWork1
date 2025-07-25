@@ -4,8 +4,270 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>HomeWork1</h1>
+    <div class="top center">
+        <div class="top__content">
+            <h1 class="top__title">
+                Добро пожаловать <br> на мой сайт мини-игр
+            </h1>
+            <p class="top__text">
+                Тебе предстоит пройти несколько увлекательных игр. <br> 
+                Если готов, нажимай <span class="top__text-bold">«Поехали!»</span> и <span class="top__text-bold">приступай</span>.
+            </p>
+            <a href="#about" class="top__btn top__btn_hover">
+                Поехали!
+            </a>
+        </div>
+    </div>
+    <div class="scroll">
+        <p class="scroll-text">
+            Викторина
+        </p>
+        <p class="scroll-text">
+            угадай число
+        </p>
+        <p class="scroll-text">
+            Переверни текст
+        </p>
+        <p class="scroll-text">
+            Простая арифметика
+        </p>
+        <p class="scroll-text">
+            Камень, ножницы, бумага
+        </p>
+        <p class="scroll-text">
+            Генератор случайных цветов
+        </p>
+        <p class="scroll-text">
+            Викторина
+        </p>
+        <p class="scroll-text">
+            угадай число
+        </p>
+        <p class="scroll-text">
+            Переверни текст
+        </p>
+        <p class="scroll-text">
+            Простая арифметика
+        </p>
+        <p class="scroll-text">
+            Камень, ножницы, бумага
+        </p>
+        <p class="scroll-text">
+            Генератор случайных цветов
+        </p>
+    </div>
+    <div id="about" class="about center">
+        <div class="about__content">
+            <h1 class="about__content-title">
+                Об играх
+            </h1>
+            <p class="about__content-text">
+                В моей коллекции представлено 6 игр на разные темы. <br>
+                Игры несложные — в них может поиграть каждый. <br>
+                Все игры доступны для пользования.
+            </p>
+        </div>
+        <div class="about__cards">
+            <div class="about__cards-container">
+                <div class="about__cards-item about__cards-item_hover">
+                    <a href="#game__1" class="about__cards-img">
+                        <img src="images_hw1/about_game1.svg" alt="Игра 1">
+                    </a>
+                    <p class="about__cards-number">
+                        Игра № 1
+                    </p>
+                    <h2 class="about__cards-title">
+                        Угадай число
+                    </h2>
+                </div>
+                <div class="about__cards-item about__cards-item_biggest about__cards-item_hover">
+                    <a href="#game__4" class="about__cards-img">
+                        <img src="images_hw1/about_game4.svg" alt="Игра 1">
+                    </a>
+                    <p class="about__cards-number">
+                        Игра № 4
+                    </p>
+                    <h2 class="about__cards-title">
+                        Камень, <br>
+                        ножницы, <br>
+                        бумага
+                    </h2>
+                </div>
+            </div>
+            <div class="about__cards-container">
+                <div class="about__cards-item about__cards-item_big about__cards-item_hover">
+                    <a href="#game__2" class="about__cards-img">
+                        <img src="images_hw1/about_game2.svg" alt="Игра 1">
+                    </a>
+                    <p class="about__cards-number">
+                        Игра № 2
+                    </p>
+                    <h2 class="about__cards-title">
+                        Простая арифметика
+                    </h2>
+                </div>
+                <div class="about__cards-item about__cards-item_big about__cards-item_hover">
+                    <a href="#game__5" class="about__cards-img">
+                        <img src="images_hw1/about_game5.svg" alt="Игра 1">
+                    </a>
+                    <p class="about__cards-number">
+                        Игра № 5
+                    </p>
+                    <h2 class="about__cards-title">
+                        Простая <br>
+                        викторина
+                    </h2>
+                </div>
+            </div>
+            <div class="about__cards-container">
+                <div class="about__cards-item about__cards-item_hover">
+                    <a href="#game__3" class="about__cards-img">
+                        <img src="images_hw1/about_game3.svg" alt="Игра 1">
+                    </a>
+                    <p class="about__cards-number">
+                        Игра № 3
+                    </p>
+                    <h2 class="about__cards-title">
+                        Переверни текст
+                    </h2>
+                </div>
+                <div class="about__cards-item about__cards-item_biggest about__cards-item_hover">
+                    <a href="#game__6" class="about__cards-img">
+                        <img src="images_hw1/about_game6.svg" alt="Игра 1">
+                    </a>
+                    <p class="about__cards-number">
+                        Игра № 6
+                    </p>
+                    <h2 class="about__cards-title">
+                        Генератор <br>
+                        случайных <br>
+                        цветов
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="games center">
+        <h1 class="games__title">
+            Мини-игры
+        </h1>
+        <div class="games__container">
+            <div id="game__1" class="games__content games__content-mobile1">
+                <div class="games__content-left">
+                    <h2 class="games__content-title">
+                        Угадай число
+                    </h2>
+                    <p class="games__content-text">
+                        Попробуй угадать случайное число от 1 до 100.
+                    </p>
+                    <button onclick="guessNumber()" class="games__content-btn games__content-btn_hover">
+                        Играть! 
+                    </button>
+                </div>
+                <div class="games__content-right">
+                    <img src="images_hw1/about_game1.svg" alt="Игра 1" class="games__content-image">
+                </div>
+            </div>
+            <div id="game__2" class="games__content games__content_reverse games__content-mobile2">
+                <div class="games__content-left">
+                    <h2 class="games__content-title">
+                        Простая арифметика
+                    </h2>
+                    <p class="games__content-text">
+                        Попробуй решить простые арифметические задачи.
+                    </p>
+                    <button onclick="simpleArithmetic()" class="games__content-btn games__content-btn_hover">
+                         Играть! 
+                    </button>
+                </div>
+                <div class="games__content-right">
+                    <img src="images_hw1/about_game2.svg" alt="Игра 1" class="games__content-image">
+                </div>
+            </div>
+            <div id="game__3" class="games__content games__content-mobile3">
+                <div class="games__content-left">
+                    <h2 class="games__content-title">
+                        Переверни текст
+                    </h2>
+                    <p class="games__content-text">
+                        Попробуй ввести текст, который будет перевернут.
+                    </p>
+                    <button onclick="turnTheTextOver()" class="games__content-btn games__content-btn_hover">
+                         Играть! 
+                    </button>
+                </div>
+                <div class="games__content-right">
+                    <img src="images_hw1/about_game3.svg" alt="Игра 1" class="games__content-image">
+                </div>
+            </div>
+            <div id="game__5" class="games__content games__content_reverse games__content-mobile4">
+                <div class="games__content-left">
+                    <h2 class="games__content-title">
+                        Викторина
+                    </h2>
+                    <p class="games__content-text">
+                        Отвечай на вопросы викторины с вариантами ответов.
+                    </p>
+                    <button onclick="gameQuiz()" class="games__content-btn games__content-btn_hover">
+                         Играть! 
+                    </button>
+                </div>
+                <div class="games__content-right">
+                    <img src="images_hw1/about_game5.svg" alt="Игра 1" class="games__content-image">
+                </div>
+            </div>
+            <div id="game__4" class="games__content games__content-mobile5">
+                <div class="games__content-left">
+                    <h2 class="games__content-title">
+                        Камень, <br>
+                        ножницы, <br>
+                        бумага
+                    </h2>
+                    <p class="games__content-text">
+                        Сыграй в популярную игру против компьютера.
+                    </p>
+                    <button onclick="rockPaperScissors()" class="games__content-btn games__content-btn_hover">
+                         Играть! 
+                    </button>
+                </div>
+                <div class="games__content-right">
+                    <img src="images_hw1/about_game4.svg" alt="Игра 1" class="games__content-image">
+                </div>
+            </div>
+            <div id="game__6" class="games__content games__content_reverse games__content-mobile6">
+                <div class="games__content-left">
+                    <h2 class="games__content-title">
+                        Генератор <br>
+                        случайных <br>
+                        цветов
+                    </h2>
+                    <p class="games__content-text">
+                        Игра, в которой при клике на кнопку фон страницы меняется на случайный.
+                    </p>
+                    <button class="games__content-btn games__content-btn_hover games__btn-six">
+                         Играть! 
+                    </button>
+                </div>
+                <div class="games__content-right">
+                    <img src="images_hw1/about_game6.svg" alt="Игра 1" class="games__content-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <h2 class="footer__title">Все права защищены.</h2>
+    </footer>
+    <script src="hw-4.js"></script>
+    <script src="hw-5.js"></script>
+    <script src="hw-6.js"></script>
+    <script src="hw-6.1.js"></script>
+    <script src="hw-7.js"></script>
+    <script src="hw-9.js"></script>
 </body>
 </html>
