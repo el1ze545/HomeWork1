@@ -9,12 +9,16 @@
    git clone https://github.com/el1ze545/HomeWork1.git
    cd HomeWork1
 
-## Использованные технологии:
+## Использованные технологии
 - HTML5, CSS3 (Flexbox, Grid)
 - JavaScript (Vanilla)
 - Animate.css для анимаций
 - Git и GitHub для контроля версий
 - Netlify для деплоя
+
+## Ссылка на деплой проекта
+https://el1ze545.github.io/HomeWork1/
+
 
 
 
